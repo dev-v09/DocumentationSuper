@@ -1,3 +1,4 @@
+// Array that has every store of SuperColchones.
 var LocsA = [{
         title: 'Durango - 20 de noviembre ',
         html: 'Ave. 20 de Noviembre No. 1329, esq. con Benito Crespo, Col. Nueva Vizcaya, Durango Dgo.<br>Teléfonos: 16188189078 - 01 800 724 0240',
