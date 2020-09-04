@@ -18,9 +18,12 @@ Currently 2 scripts are stored in this repository, both should redirect you to t
 
 ## The Project
 #### js-colchon-ideal-v2
-![test](https://media.giphy.com/media/26n7b7PjSOZJwVCmY/giphy.gif)
+![1](https://media.giphy.com/media/U2G8qppw9ZXGm0f2il/giphy.gif)
+![2](https://media.giphy.com/media/XcB2ZLWeIpBDFSQ4ef/giphy.gif)
+![3](https://media.giphy.com/media/Thp44jT9PQeSNUJqVb/giphy.gif)
+---
 #### mapa-sucursales3.0
-![test](https://media.giphy.com/media/26n7b7PjSOZJwVCmY/giphy.gif)
+![map](https://media.giphy.com/media/gIN9Aka0g4UFn1kY3w/giphy.gif)
 
 ## Usage
 
