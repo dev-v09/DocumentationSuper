@@ -1,4 +1,4 @@
-// Array that has every store of SuperColchones.
+// Array that has every store location of SuperColchones.
 var LocsA = [{
         title: 'Durango - 20 de noviembre ',
         html: 'Ave. 20 de Noviembre No. 1329, esq. con Benito Crespo, Col. Nueva Vizcaya, Durango Dgo.<br>Teléfonos: 16188189078 - 01 800 724 0240',
@@ -1360,7 +1360,7 @@ var LocsA = [{
         zoom: 17
     },
 ];
-
+// This sorts the Array alphabetically by name
 LocsA = LocsA.sort((a, b) => {
     if (a.title < b.title)
         return -1;
@@ -1368,7 +1368,10 @@ LocsA = LocsA.sort((a, b) => {
         return 1;
     return 0;
 });
-
+/* ShowCity()
+ * Iterates through every store and
+ * hiddes non-selected stores.
+ */
 function showCity(needChangeZoom) {
     for (i = 0; i < LocsA.length; i++) {
         if ($("#sucursal option:selected").val() == LocsA[i].clase) {
@@ -1378,7 +1381,10 @@ function showCity(needChangeZoom) {
         }
     }
 }
-//Muestra las sucursales desde el inicio
+/* As soon as the DOM is loaded
+ * This will append the stores to the
+ * Front-End.
+ */
 $(document).ready(function () {
     var i = 0;
     LocsA.forEach(function (entry) {
@@ -1387,7 +1393,9 @@ $(document).ready(function () {
     });
     showCity(1);
 });
-//
+/* This adds the text box that is displayed
+ * when a store location is clicked.
+ */
 var contentString = '<div id="content">' +
     '<div id="siteNotice">' +
     '</div>' +
@@ -1408,17 +1416,22 @@ var contentString = '<div id="content">' +
     '(last visited June 22, 2009).</p>' +
     '</div>' +
     '</div>';
-//
+
+// GOOGLE MAPS CODE
+// Sets the settings for the map.
 var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
     center: new google.maps.LatLng(25.6667, -100.3167),
     mapTypeId: google.maps.MapTypeId.ROADMAP
 });
-//
+// Variables
 var infowindow = new google.maps.InfoWindow();
 var markers = new Array();
 var marker, i;
-//
+/* Iterates every store in the array 
+ * and sets the ping marker as well
+ * as setting the information box.
+ */
 for (i = 0; i < LocsA.length; i++) {
     var icon = {
         url: '/arquivos/marker-sc-64-64.png',
@@ -1432,7 +1445,6 @@ for (i = 0; i < LocsA.length; i++) {
         icon: icon
     });
     markers.push(marker);
-    //
     google.maps.event.addListener(marker, 'click', (function (marker, i) {
         return function () {
             var contenido = LocsA[i].title + "<br>" + LocsA[i].html;
@@ -1441,9 +1453,12 @@ for (i = 0; i < LocsA.length; i++) {
         }
     })(marker, i));
 }
-//
+/* CambiaZoom()
+ * This Function is executed if a store is
+ * clicked, this should change the zoom to
+ * its current lat, long position.
+ */
 function cambiaZoom(idMarker) {
-    //console.log("coord::: " + LocsA[idMarker].lat + "," + LocsA[idMarker].lon);
     map.setCenter({
         lat: LocsA[idMarker].lat,
         lng: LocsA[idMarker].lon
