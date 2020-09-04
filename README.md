@@ -12,8 +12,8 @@ Currently 2 scripts are stored in this repository, both should redirect you to t
 
 |      Day      |  File  |      Status     |      Notes     |
 |:-------------:|:-------------:|:-------------:|:--------------|
+| 9.4.2020 |  mapa-sucursales3.0  | Added | <ul><li>Code should be now documented</li><li>Google maps is needed in order to run this script</li><li>An HTML and CSS code is also required in order to run the code check it out [here](https://developers.google.com/maps/documentation/javascript/overview)</li></ul>|
 | 9.4.2020 |  js-colchon-ideal-v2  | Added | <ul><li>Test</li></ul>|
-| 9.4.2020 |  mapa-sucursales3.0  | Added | <ul><li>Test</li></ul>|
 
 ## The Project
 #### js-colchon-ideal-v2
