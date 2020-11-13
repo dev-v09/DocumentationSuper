@@ -49,7 +49,7 @@ var LocsA = [{
     },
     {
         title: 'Zapopan - Arcos Estampida',
-        html: 'NiÃ±os HÃ©roes No. 2716, Jardines del Bosque.<br>Teléfonos: 01 33 3686 0471 - 01 800 724 0240',
+        html: 'Niños Héroes No. 2716, Jardines del Bosque.<br>Teléfonos: 01 33 3686 0471 - 01 800 724 0240',
         clase: 'jalisco',
         lat: 20.6668484,
         lon: -103.3870125,
@@ -209,7 +209,7 @@ var LocsA = [{
     },
     {
         title: 'Tampico - Boutique Hidalgo',
-        html: 'ProlongaciÃ³n Ave. Hidalgo No. 5014-A, Col. Laguna de la Herradura. <br>Teléfonos: 01 833 228 9952 - 01 800 724 0240',
+        html: 'Prolongación Ave. Hidalgo No. 5014-A, Col. Laguna de la Herradura. <br>Teléfonos: 01 833 228 9952 - 01 800 724 0240',
         clase: 'tamaulipas',
         lat: 22.2701938,
         lon: -97.8762317,
@@ -752,7 +752,7 @@ var LocsA = [{
         zoom: 17
     },
     {
-        title: 'Monterrey - Gozalitos',
+        title: 'Monterrey - Gonzalitos',
         html: 'Ave. Gonzalitos No. 563, Col. Mitras Sur, Monterrey, N.L.<br>Teléfonos: 83474873 - 83473520  ',
         clase: 'nuevo_leon',
         lat: 25.682573,
@@ -1208,12 +1208,13 @@ var LocsA = [{
         zoom: 17
     },
     {
-        title: 'Monterrey - Unidad Modelo',
-        html: 'Calle Av. Aztlán 7401, 64140 Monterrey, N.L. <br>Teléfonos: 01 81 8322 5011',
+        title: 'Monterrey - Plaza Arcadia',
+        html: 'Av. Eloy Cavazos No. 3301. Camino Real 67170. Guadalupe N.L. <br>Teléfonos: 01 811 535 1869',
         clase: 'nuevo_leon',
-        lat: 25.7409624,
-        lon: -100.3539346,
+        lat: 25.659541,
+        lon: -100.227890,
         zoom: 17
+
     },
     {
         title: 'Chihuahua - Vallarta',
@@ -1357,6 +1358,14 @@ var LocsA = [{
         clase: 'durango',
         lat: 24.0356703,
         lon: -104.654049,
+        zoom: 17
+    },
+    {
+        title: 'Reynosa - La Juarez',
+        html: 'Calzada Victoria #123, Esq. Emilio portes Gil, Col. Pedro J. Mendez<br> Teléfonos: 899 688 6573',
+        clase: 'tamaulipas',
+        lat: 26.022342,
+        lon: -98.277915,
         zoom: 17
     },
 ];
